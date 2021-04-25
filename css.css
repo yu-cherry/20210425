@@ -1,0 +1,47 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+}
+
+.card-inner {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card-inner {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-imgouter {
+    position: relative;
+    backface-visibility: hidden;
+}
+
+.card-img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    position: absolute;
+    top:0;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
